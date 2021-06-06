@@ -12,7 +12,7 @@ const aTagStyle = { textDecoration: 'none', color: 'inherit' };
 export const LayoutListItems = (
   <div>
     <ListSubheader inset>Layout</ListSubheader>
-    <Link to="/" style={aTagStyle}>
+    <Link to="/box" style={aTagStyle}>
       <ListItem button>
         <ListItemText inset primary="Box" />
       </ListItem>

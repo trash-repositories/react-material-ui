@@ -22,6 +22,7 @@ import { LayoutListItems, InputListItems } from './listItems';
 
 import { Route } from "react-router-dom";
 import Home from "./Home";
+import BoxComponent from "./layout/Box";
 import About from "./About";
 
 function Copyright() {
@@ -113,9 +114,6 @@ const useStyles = makeStyles((theme) => ({
     overflow: 'auto',
     flexDirection: 'column',
   },
-  fixedHeight: {
-    height: 240,
-  },
 }));
 
 export default function Dashboard() {
@@ -177,6 +175,7 @@ export default function Dashboard() {
             <Grid item xs={12}>
               <Paper className={fixedHeightPaper}>
                 <Route path="/" exact={true} component={Home} />
+                <Route path="/box" component={BoxComponent} />
                 <Route path="/about" component={About} />
               </Paper>
             </Grid>
