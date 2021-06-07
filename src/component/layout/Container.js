@@ -1,7 +1,7 @@
 import React from 'react';
 import { Divider, CssBaseline, Typography, Container } from '@material-ui/core';
 
-const BoxComponent = () => {
+const ContainerComponent = () => {
   return (
     <div>
       <h1>Container</h1>
@@ -21,4 +21,4 @@ const BoxComponent = () => {
   );
 };
 
-export default BoxComponent;
+export default ContainerComponent;
