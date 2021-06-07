@@ -17,7 +17,7 @@ export const LayoutListItems = (
         <ListItemText inset primary="Box" />
       </ListItem>
     </Link>
-    <Link to="/about" style={aTagStyle}>
+    <Link to="/container" style={aTagStyle}>
       <ListItem button>
         <ListItemText inset primary="Container" />
       </ListItem>
