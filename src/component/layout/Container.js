@@ -16,7 +16,7 @@ const BoxComponent = () => {
       </React.Fragment>
       <Divider />
       <h1>API</h1>
-      {`import Box from '@material-ui/core/Box'`}
+      {`import Container from '@material-ui/core/Container'`}
     </div>
   );
 };

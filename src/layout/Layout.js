@@ -9,11 +9,7 @@ import Paper from '@material-ui/core/Paper';
 import Link from '@material-ui/core/Link';
 
 import Header from './Header';
-
-import { Route } from "react-router-dom";
-import Home from "../Home";
-import BoxComponent from "../component/layout/Box";
-import ContainerComponent from "../component/layout/Container";
+import Router from './Router';
 
 function Copyright() {
   return (
@@ -49,7 +45,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Dashboard() {
+export default function Layout() {
   const classes = useStyles();
   const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
 
@@ -62,9 +58,7 @@ export default function Dashboard() {
           <Grid container>
             <Grid item xs={12}>
               <Paper className={fixedHeightPaper}>
-                <Route path="/" exact={true} component={Home} />
-                <Route path="/box" component={BoxComponent} />
-                <Route path="/container" component={ContainerComponent} />
+                <Router />
               </Paper>
             </Grid>
           </Grid>
