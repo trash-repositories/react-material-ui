@@ -36,9 +36,11 @@ export const LayoutListItems = (
 export const InputListItems = (
   <div>
     <ListSubheader inset>Inputs</ListSubheader>
-    <ListItem button>
-      <ListItemText inset primary="Button" />
-    </ListItem>
+    <Link to="/button" style={aTagStyle}>
+      <ListItem button>
+        <ListItemText inset primary="Button" />
+      </ListItem>
+    </Link>
     <ListItem button>
       <ListItemText inset primary="Button Group" />
     </ListItem>

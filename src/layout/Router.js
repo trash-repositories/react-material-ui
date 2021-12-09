@@ -4,6 +4,8 @@ import BoxComponent from "../component/layout/Box";
 import ContainerComponent from "../component/layout/Container";
 import GridComponent from "../component/layout/Grid";
 
+import ButtonCompont from "../component/input/Button";
+
 const Router = () => {
   return (
     <>
@@ -11,6 +13,7 @@ const Router = () => {
       <Route path="/box" component={BoxComponent} />
       <Route path="/container" component={ContainerComponent} />
       <Route path="/grid" component={GridComponent} />
+      <Route path="/button" component={ButtonCompont} />
     </>
   );
 };
