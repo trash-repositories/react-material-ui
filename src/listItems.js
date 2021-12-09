@@ -41,9 +41,11 @@ export const InputListItems = (
         <ListItemText inset primary="Button" />
       </ListItem>
     </Link>
-    <ListItem button>
-      <ListItemText inset primary="Button Group" />
-    </ListItem>
+    <Link to="/button-group" style={aTagStyle}>
+      <ListItem button>
+        <ListItemText inset primary="Button Group" />
+      </ListItem>
+    </Link>
     <ListItem button>
       <ListItemText inset primary="Checkbox" />
     </ListItem>

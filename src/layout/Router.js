@@ -5,6 +5,7 @@ import ContainerComponent from "../component/layout/Container";
 import GridComponent from "../component/layout/Grid";
 
 import ButtonCompont from "../component/input/Button";
+import ButtonGroupCompont from "../component/input/ButtonGroup";
 
 const Router = () => {
   return (
@@ -14,6 +15,7 @@ const Router = () => {
       <Route path="/container" component={ContainerComponent} />
       <Route path="/grid" component={GridComponent} />
       <Route path="/button" component={ButtonCompont} />
+      <Route path="/button-group" component={ButtonGroupCompont} />
     </>
   );
 };
